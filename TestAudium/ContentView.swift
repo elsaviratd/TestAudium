@@ -35,18 +35,20 @@ struct ContentView: View {
                     }
                 }
                 
-                Section(header: Text("Debug Info")) {
-                    HStack {
-                        Text("Nearest Beacon")
-                    }
-                    HStack {
-                        Text("Beacon ID")
-                    }
-                    HStack {
-                        Text("Current Audio")
-                    }
-                    HStack {
-                        Text("Duration")
+                if selectedSession {
+                    Section(header: Text("Debug Info")) {
+                        HStack {
+                            Text("Nearest Beacon")
+                        }
+                        HStack {
+                            Text("Beacon ID")
+                        }
+                        HStack {
+                            Text("Current Audio")
+                        }
+                        HStack {
+                            Text("Duration")
+                        }
                     }
                 }
             }
