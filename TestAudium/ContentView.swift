@@ -53,6 +53,12 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Audium.")
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Alpha Version 1.0 (Mark I)")
+                        .font(.footnote)
+                }
+            }
         }
     }
 }
