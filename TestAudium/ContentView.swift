@@ -13,6 +13,16 @@ struct ContentView: View {
     @State private var selectedMuseum = "Select Museum"
     @State private var selectedSession = false
     
+    init() {
+          let appearance = UINavigationBarAppearance()
+          appearance.configureWithOpaqueBackground()
+          appearance.backgroundColor = .white
+          appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+          appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
+          
+          UINavigationBar.appearance().scrollEdgeAppearance = appearance
+      }
+    
     var body: some View {
         NavigationView {
             List {
